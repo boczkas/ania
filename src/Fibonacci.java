@@ -13,6 +13,14 @@ public class Fibonacci {
         int n2;
         int i;
 
+        if (x == 0) {
+            System.out.println(n0);
+        }
+
+        if (x == 1) {
+            System.out.println(n1);
+        }
+
         for(i=2; i<1000; ++i) {
             n2=n0+n1;
             n0=n1;
