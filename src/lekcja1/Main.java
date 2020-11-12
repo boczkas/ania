@@ -2,16 +2,16 @@ package lekcja1;
 
 // ============================ WPROWADZENIE ===============================
 //
-// omowic po kolei public class Main + nazwa pliku taka sama jak nazwa klasy
-// wszystko w Javie musi się znaleźć w klasie
-// klamerki - początek i koniec ciała metody, klasy, itd.
-// gdzie piszemy kod
-// co to są i jak używać komentarzy
-// rodzaje // - jednolinijkowy, /* */ - wielolinijkowy
-// każda komenda musi być zakończona ; jak w j. polskim zdanie .
-// instrukcja może być wielowierszowa
-// sout - wzieliśmy obiekt System.out i wywołaliśmy jego metodę println z argumentem "No witam"
-// ta metoda przyjmuje jeden argument, ale metody mogą przyjmować ich więcej, bądź wcale, nadal jednak nie wolno pominąć nawiasów
+// @ omowic po kolei public class Main + nazwa pliku taka sama jak nazwa klasy
+// @ wszystko w Javie musi się znaleźć w klasie
+// @ klamerki - początek i koniec ciała metody, klasy, itd.
+// @ gdzie piszemy kod
+// @ co to są i jak używać komentarzy
+// @ rodzaje // - jednolinijkowy, /* */ - wielolinijkowy
+// @ każda komenda musi być zakończona ; jak w j. polskim zdanie .
+// @ instrukcja może być wielowierszowa
+// @ sout - wzieliśmy obiekt System.out i wywołaliśmy jego metodę println z argumentem "No witam"
+// @ ta metoda przyjmuje jeden argument, ale metody mogą przyjmować ich więcej, bądź wcale, nadal jednak nie wolno pominąć nawiasów
 
 // ============================ TYPY DANYCH ===============================
 // CALKOWITE
@@ -26,8 +26,14 @@ package lekcja1;
 
 public class Main {
     public static void main(String[] args) {
+        Kot kajtek = new Kot();
+//        kajtek.szczekaj();
 //        System.out.println("No witam");
 //        System.out.println();
+
+//        int liczba = 4;
+//        System.out.println(liczba);
+//        System.out.println(kajtek);
 //
 //        byte bajcik = 1;
 //        int intigerek = 1;
