@@ -23,6 +23,7 @@ public class GuessTheNumber {
                 }
                 guessedNumber = in.nextInt();
             }
+            System.out.println("Zgadles! Losowa liczba to: " + randomNumber);
         }
     }
 }
