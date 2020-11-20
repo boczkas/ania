@@ -52,8 +52,14 @@ public class Main {
 //        Kot kocur;
 
 //  zmienne trzeba zainicjalizować
-//        int wiek;
+//        int wiek = 5;
 //        System.out.println(wiek);
+
+//        StringBuilder stringBuilder = new StringBuilder();
+//        for (int i = 0; i < 10; i++) {
+//            stringBuilder.append(i);
+//        }
+//        System.out.println(stringBuilder.toString());
 
 // deklarację zmiennych można przeplatać z regularnym kodem
 // dobry styl programowania, to deklarowanie zmiennych jak najbliżej ich użycia
@@ -77,21 +83,26 @@ public class Main {
 //        final String IMIE = "Przemek";
 //        System.out.println("Twoje imie to " + IMIE);
 //
-//        IMIE = "Bartosz";
+//        IMIE = "Ania";
 
 //        5. Operatory: +, -, *, / , %
-//        System.out.println("1 + 2 = " + (1 + 2));
-//        System.out.println("1 - 2 = " + (1 - 2));
-//        System.out.println("2 * 2 = " + (2 * 2));
-//        System.out.println("9 / 3 = " + (9 / 3));
-//        System.out.println("5 % 2 = " + (5 % 2));
+        System.out.println("1 + 2 = " + (1 + 2));
+        System.out.println("1 - 2 = " + (1 - 2));
+        System.out.println("2 * 2 = " + (2 * 2));
+        System.out.println("9 / 3 = " + (9 / 3));
+        System.out.println("5 % 2 = " + (5 % 2));
 
 //        6. Funkcje i stałe matematyczne
 //        Eksploracja przez klasę Math
-//        System.out.println(Math.sqrt(4));
-//        System.out.println(Math.pow(2, 3));
+        System.out.println(Math.sqrt(4));
+        System.out.println(Math.pow(2, 3));
 //
 //        Zadanko na teraz: oblicz długość przeciwprostokątnej w trójkącie prostokątnym, długości boków wczytaj
 //        ze standardowego wejścia
+
+        Wielomian wielomian = new Wielomian();
+
+        MiejscaZerowe miejscaZerowe = wielomian.obliczMiejscaZerowe(1, 2, 3);
+        System.out.println(miejscaZerowe.getPiersze() + " " + " " + miejscaZerowe.getDrugie());
     }
 }
