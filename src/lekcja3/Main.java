@@ -80,6 +80,7 @@ public class Main {
 //        System.out.println( "3 > 7 " + (3 > 7));
 //        System.out.println( "3 >= 7 " + (3 >= 7));
 //        System.out.println( "3 <= 7 " + (3 <= 7));
+//        System.out.println("!true " + (!true));
 //
 //        System.out.println("true || false " + (true || false));
 //        System.out.println("true && false " + (true && false));
