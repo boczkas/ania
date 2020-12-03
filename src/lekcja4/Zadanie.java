@@ -12,7 +12,7 @@ public class Zadanie {
 
         System.out.println(biblia);
 
-        // Oblicz ile razy w Bibli występuje słowo Amen
+        // Oblicz ile razy w Bibli występuje słowo Pan
         // Oblicz ile linii ma Biblia
 
     }
