@@ -42,6 +42,11 @@ public class Main {
 
 //        3. Typ wyliczeniowy
 //        Stworzyć dni tygodnia
+//        DzienTygodnia dzisiaj = DzienTygodnia.PONIEDZIALEK;
+//
+//        if (dzisiaj.equals(DzienTygodnia.PONIEDZIALEK)) {
+//            System.out.println("Dzisiaj poniedzialek");
+//        }
 
 //        4. Łańcuchy - String
         String powitanie = "Cześć";
@@ -65,10 +70,27 @@ public class Main {
         System.out.println(ania + " ma " + wiek + " lat ");
 
 //        Znaki specjalne
-//        System.out.println("Jej mąż nazywany był "Baryłem"");
-//        System.out.println(" \tLubił platformy \n ale bardziej grać w gry");
+        System.out.println("Jej mąż nazywany był \"Baryłem\"");
+        System.out.println("\tLubił platformy \nale bardziej grać w gry");
 
 //        Stringi są niezmienne
 //        co tak na prawdę robi operator ==
+//        String slowo = "slowo";
+//
+//        if (slowo == wyrazenie) {
+//            System.out.println("To samo");
+//        }
+//
+//        Pies burek1 = new Pies();
+//        burek1.imie = "Burek";
+//
+//        Pies burek2 = new Pies();
+//        burek2.imie = "Burek";
+//
+//        if (burek1 == burek2) {
+//            System.out.println("te same psy");
+//        } else {
+//            System.out.println("Nie te same psy");
+//        }
     }
 }
