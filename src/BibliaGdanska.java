@@ -27,23 +27,14 @@ public class BibliaGdanska {
                 slowoPan++;
                 int pozycjaPan = lineUpper.indexOf("PAN ");
                 String substring = lineUpper.substring(pozycjaPan + 4);
-                if (substring.contains("PAN ")) {
+                while (substring.contains("PAN ")) {
                     slowoPan++;
-                    int pozycjaPan2 = substring.indexOf("PAN ");
-                    String substring2 = substring.substring(pozycjaPan2 + 4);
-                    if (substring2.contains("PAN ")) {
-                        slowoPan++;
-                        int pozycjaPan3 = substring2.indexOf("PAN ");
-                        String substring3 = substring2.substring(pozycjaPan3 + 4);
-                        if (substring3.contains("PAN ")) {
-                            slowoPan++;
-
-                            }
-                        }
+                    //nowe pętlowe wypociny
+                    pozycjaPan = substring.indexOf("PAN ");
+                    substring = substring.substring(pozycjaPan + 4);
                     }
                 }
             }
-
         System.out.println("Teskt posiada " + liczbaWierszy + " linijek.");
         System.out.println("Słowo \"Pan\" występuje " + slowoPan + " razy.");
     }
