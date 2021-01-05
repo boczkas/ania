@@ -8,7 +8,7 @@ public class Main {
 //    1. Wybór wieloktrotny switch
 
     public static void main(String[] args) {
-//        int number = 7;
+//        int number = 1;
 //
 //        switch (number) {
 //            case 1:
@@ -50,10 +50,10 @@ public class Main {
 //        while (liczba1 < 5) {
 //            while (liczba2 < 5) {
 //                if (liczba2 == 3) break;
-//                System.out.println(liczba2);
+//                System.out.println("liczba2: " + liczba2);
 //                liczba2++;
 //            }
-//            System.out.println(liczba1);
+//            System.out.println("liczba1: " + liczba1);
 //            liczba1++;
 //        }
 //
@@ -124,9 +124,13 @@ public class Main {
 //        tablica2[0] = 10;
 //        wypisywaczka(tablica1);
 //
-//        int[] tablica3 = Arrays.copyOf(tablica1, tablica1.length - 1);
+//        System.out.println(tablica2);
+//        Zadanie zadanie = new Zadanie();
+//        System.out.println(zadanie);
+//
+//        int[] tablica3 = Arrays.copyOf(tablica1, tablica1.length);
 //        tablica3[1] = 20;
-//        wypisywaczka(tablica1);
+//        wypisywaczka(tablica3);
     }
 
     static void wypisywaczka(int[] tablica) {
