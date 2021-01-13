@@ -1,5 +1,8 @@
 package lekcja8;
 
+import lekcja8.zamowienia.Item;
+import lekcja8.zamowienia.Order;
+
 import java.time.Instant;
 import java.time.LocalTime;
 import java.time.Year;
@@ -14,9 +17,21 @@ public class Main {
 
 //    3.
 //    Przedmioty można dodawać i wyjmować z naszego zamówienia.
-//    Zrobimy jakiś analizator do zamówień, który policzy nam średnią cenę
 
     public static void main(String[] args) {
+
+        Item item = new Item("japko", 1.0);
+        Order order = new Order();
+        order.showItems();
+        System.out.println("=================================");
+        order.addItem(item);
+        order.addItem(item);
+        order.showItems();
+        System.out.println("=================================");
+        order.remove(item);
+        order.showItems();
+        System.out.println("=================================");
+
 
 //        4. Używanie klas wbudowanych
 //        Przejdziemy przez pakiet Time
