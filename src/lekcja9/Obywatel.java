@@ -22,6 +22,18 @@ public class Obywatel {
         this.pocketMoney = pocketMoney;
     }
 
+    public Obywatel() {
+        this.name = "";
+        this.dateOfBirth = null;
+        this.pocketMoney = 0;
+    }
+
+    public Obywatel(String name) {
+        this.name = name;
+        this.dateOfBirth = LocalDate.of(0, 0, 0);
+        this.pocketMoney = 0;
+    }
+
     public String getName() {
         return name;
     }
@@ -36,5 +48,13 @@ public class Obywatel {
 
     public void setPocketMoney(double pocketMoney) {
         this.pocketMoney = pocketMoney;
+    }
+
+    public void showPocketMoney() {
+        System.out.println(this.getName() + ": " + this.pocketMoney);
+    }
+
+    public void increasePocketMoney(int amount) {
+        this.pocketMoney = this.pocketMoney + amount;
     }
 }
