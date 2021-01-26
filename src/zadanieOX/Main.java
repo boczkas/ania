@@ -1,6 +1,10 @@
 package zadanieOX;
 
 public class Main {
+
+    static Player player1 = new Player("Przemek");
+    static Player player2 = new Player("Ania");
+
     public static void main(String[] args) {
 //        Napisz prostą grę w kółko krzyżyk
 //
@@ -13,5 +17,20 @@ public class Main {
 //        6. Można zakończyć grę w dowolnym momencie po wpisaniu słowa quit
 //        7. Gra ma mieć 3 rundy
 //        8. Zaczynający turę gracz ma się zmieniać co rozgrywkę
+
+
+        Player currentPlayer = player1;
+
+        System.out.println(currentPlayer);
+
+        currentPlayer = switchPlayer(currentPlayer);
+
+        System.out.println(currentPlayer);
+
+
+    }
+
+    static Player switchPlayer(Player currentPlayer) {
+        return currentPlayer.equals(player1) ? player2 : player1;
     }
 }
