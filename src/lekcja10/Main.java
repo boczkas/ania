@@ -17,6 +17,7 @@ public class Main {
 
 //        isSuspended - chcemy zmieniać i odczytywać. Czy wtedy publiczne pole?
 //        Co ze zmianą implementacji?
+//        System.out.println(marys.getIsSuspended());
 
 //        2. Przywileje klasowe
 //        Każda metoda ma dostęp do wszystkich składowych obiektu klasy
@@ -24,9 +25,10 @@ public class Main {
 
 //        3. Metody prywatne
 //        Dobrą praktyką jest tworzenie pól prywatnych w klasie, ale co z metodami?
-//        Czasami się ich używa - stworzymy increaseIfNotExceedLimit(100, 2000);
+//        Czasami się ich używa - stworzymy increasePocketMoneyIfNotExceedLimit(100, 2000);
 //        To że metoda jest prywatna daje nam pewność, że nie jest używana poza klasą i jej zmiana,
 //        a nawet usunięcie nie spowoduje błędów kompilacji
+//        marys.increasePocketMoneyIfNotExceedLimit(100, 2000);
 
 //        4. Stałe jako pola klasy
 //        słówko final. U nas np. name . Pola z final MUSZĄ zostać zainicjalizowane przed zakończeniem działania
@@ -37,16 +39,17 @@ public class Main {
 //        inaczej jest w przypadku zmiennych ze static - pola klasowe (nie obiektowe)
 //        ammountOfPeople
 
-        Obywatel nika = new Obywatel("Nikoletta", 1,1,1,0);
+//        Obywatel nika = new Obywatel("Nikoletta", 1,1,1,0);
+//        System.out.println(Obywatel.getAmountOfPeople());
+//
+//        Obywatel ania = new Obywatel("Ania");
 //        System.out.println(Obywatel.getAmountOfPeople());
 //        System.out.println(nika.getAmountOfPeople());
+//
+//        Obywatel tosia = new Obywatel("Tosia");
+//        System.out.println(Obywatel.getAmountOfPeople());
+//        System.out.println(nika.getAmountOfPeople());
+//        System.out.println(ania.getAmountOfPeople());
 
-        Obywatel ania = new Obywatel("Ania");
-        System.out.println(Obywatel.getAmountOfPeople());
-        System.out.println(nika.getAmountOfPeople());
-
-        Obywatel tosia = new Obywatel("Tosia");
-        System.out.println(Obywatel.getAmountOfPeople());
-        System.out.println(nika.getAmountOfPeople());
     }
 }
