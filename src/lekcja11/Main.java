@@ -1,23 +1,25 @@
 package lekcja11;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 //        1. Metody fabryczne - tworzymy obiekt nie przez kontruktor
-        LocalDate localDate = LocalDate.of(1,1,1);
-        System.out.println(localDate);
+//        LocalDate localDate = LocalDate.of(1,1,1);
+//        System.out.println(localDate);
 
 //        2. Przekazywanie argumentów do metod - w Javie zawsze przez wartość,
 //        czyli wartość jest skopiowana
-        double number = 3;
-        triple(number);
-        System.out.println("double number: " + number);
+//        double number = 3;
+//        triple(number);
+//        System.out.println("double number: " + number);
 
-        Pracownik pracownik = new Pracownik(3);
-        triple(pracownik);
-
-        System.out.println("pracownik.wyplata: " + pracownik.wyplata);
+//        Pracownik pracownik = new Pracownik(3);
+//        System.out.println(pracownik);
+//        triple(pracownik);
+//
+//        System.out.println("pracownik.wyplata: " + pracownik.wyplata);
 
 //        Metoda nie może zmodyfikować parametru typu podstawowego (czyli będącego liczbą lub wartością logiczną)
 //        Metoda może zmienić stan obiektu przekazanego jako parametr
@@ -29,17 +31,27 @@ public class Main {
 //        1. Przeciążanie
         Obywatel staszek = new Obywatel("Staszek");
         Obywatel julka = new Obywatel("Julka", 1,1,1,1);
-
-        String tekst = "to jest jakiś kawałek tekstu";
-        tekst.indexOf("j");
-        tekst.indexOf("j", 5);
+//
+//        String tekst = "to jest jakiś kawałek tekstu";
+//        tekst.indexOf("j");
+//        tekst.indexOf("j", 5);
 
 //        2. Domyślna inicjalizacja pól
         Obywatel bezimienny = new Obywatel();
-        System.out.println("name: " + bezimienny.getName());
-        System.out.println("dateOfBirth: " + bezimienny.getDateOfBirth());
-        System.out.println("isSuspended: " + bezimienny.getIsSuspended());
-        System.out.println("pocketMoney: " + bezimienny.getPocketMoney());
+//        System.out.println("name: " + bezimienny.getName());
+//        System.out.println("dateOfBirth: " + bezimienny.getDateOfBirth());
+//        System.out.println("isSuspended: " + bezimienny.getIsSuspended());
+//        System.out.println("pocketMoney: " + bezimienny.getPocketMoney());
+
+        Obywatel obywatel = new Obywatel();
+//
+//        if ("gfkjalkjf".contains("s")) {
+//            obywatel = new Obywatel("S");
+//        }
+//        else {
+//            obywatel = new Obywatel("A");
+//        }
+//        bezimienny.getName().indexOf("a");
 
 //        Domyślna inicjalizacja nie jest dobrym pomysłem. Należy jawnie inicjalizować pola
 //        Pokazać jak to u nas działa w Obywatel
@@ -54,7 +66,9 @@ public class Main {
     }
 
     private static void triple(double numerek) {
-        System.out.println(numerek * 3);
+        numerek = numerek * 3;
+        System.out.println(numerek);
+
     }
 
     private static void triple(Pracownik worker) {

@@ -14,10 +14,13 @@ public class Obywatel {
     private static int amountOfPeople = 0;
 
     {
+        System.out.println("To pierwsze");
         amountOfPeople++;
     }
 
+
     public Obywatel(String name, int year, int month, int day, double pocketMoney) {
+        System.out.println("To drugie");
         this.name = name;
         this.dateOfBirth = LocalDate.of(year, month, day);
         this.pocketMoney = pocketMoney;
@@ -33,7 +36,9 @@ public class Obywatel {
 //        amountOfPeople += 1;
     }
 
-    public Obywatel() {}
+    public Obywatel() {
+        this("");
+    }
 
     public Obywatel(String name, LocalDate localDate) {
         this(name, localDate.getYear(), localDate.getMonthValue(), localDate.getDayOfMonth(), 0);
