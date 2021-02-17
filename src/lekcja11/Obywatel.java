@@ -5,8 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Obywatel {
-
-    private String name;
+    protected String name;
     private LocalDate dateOfBirth;
     private double pocketMoney;
     private boolean isSuspended;
