@@ -6,17 +6,20 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // 1. Nadpisywanie metod @Override
-        Villager villager = new Villager("Staszek", 52);
-        villager.sayHello();
-        villager = new NiezwyklyVillager("Zenek", 30, "krzycze");
-        villager.sayHello();
-        villager = new ChoryVillager("Kasztan", 1);
-        villager.sayHello();
+//        Villager villager = new Villager("Staszek", 52);
+//        villager.sayHello();
+//        villager = new NiezwyklyVillager("Zenek", 30, "krzycze");
+//        villager.sayHello();
+//        villager = new ChoryVillager("Kasztan", 1);
+//        villager.sayHello();
 
-//        2. Przeciążanie metod (overload)
+//        2. Przeciążanie metod (Overload)
 //        W NiezwyklyVillager
 //        dopisać metodę dajPrezent(String nazwa)
+        Villager niezwykly = new NiezwyklyVillager("Zenek", 30, "krzycze");
 //        dopisać metodę dajPrezent(String nazwa, int ilosc)
+        NiezwyklyVillager zenek = (NiezwyklyVillager) niezwykly;
+        zenek.dajPrezent("banan", 2);
 
 //        3. Pokazać, że nie można przeciążać na podstawie typu zwracanego, a jedynie na podsawie argumentów
 //        zmodyfikować metodę dajPrezent(String nazwa) tak by zwracała String dzięki
@@ -36,7 +39,9 @@ public class Main {
 //        Trzeba pamiętać, że pola też mogą być finalne - co to znaczy?
 
 //        6. Rzutowanie obiektów
-        List<Villager> villagers = List.of(new Villager("Staszek", 52),
+        int piatka = 5;
+        piatka = (int) 0.5;
+        List<Villager> villagers = List.of(new ChoryVillager("Staszek", 52),
                 new ChoryVillager("Jozek", 30),
                 new NiezwyklyVillager("Robert", 50, "jem koper psem"));
 

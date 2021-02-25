@@ -16,14 +16,20 @@ public class NiezwyklyVillager extends Villager {
         return skill;
     }
 
-    //    ChoryVillager ktoJestMoimKuplem(ChoryVillager villager) {
-//        System.out.println("Moim kumplem jest: " + villager.getName());
-//        return villager;
-//    }
+    public void dajPrezent(String nazwa) {
+        System.out.println("Dzięki za " + nazwa);
+    }
 
-//    @Override
-//    ChoryVillager ktoJestMoimKuplem(ChoryVillager villager) {
-//        System.out.println("Moim kumplem jest: " + villager.getName());
-//        return villager;
-//    }
+    public void dajPrezent(String nazwa, int ilosc) {
+        System.out.println("Dzięki za " + nazwa + "w ilosci " + ilosc);
+    }
+
+    public String getDescriptiveName() {
+        return "Siema jestem niezwyklym mieszkancem " + getName();
+    }
+
+    ChoryVillager ktoJestMoimKuplem(ChoryVillager villager) {
+        System.out.println("Moim kumplem jest: " + villager.getName());
+        return villager;
+    }
 }
