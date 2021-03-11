@@ -1,5 +1,7 @@
 package lekcja13;
 
+import lekcja14.Pracownik;
+
 import java.time.LocalDate;
 import java.util.List;
 
@@ -68,5 +70,6 @@ public class Main {
 //
 //        Generalnie nie zaleca się ani rzutowania ani używania instanceof.
 //        Jeśli jest taka konieczność jest spora szansa, że klasa bazowa została źle zaprojektowana.
+        Pracownik ania = new Pracownik("Ania", 100);
     }
 }
