@@ -30,41 +30,42 @@ public class Main {
 
 //        5. Iterowanie po wszystkich elementach
 
-        ArrayList<Kot> kociaki = new ArrayList<>();
-        kociaki.add(new Kot("Staszek"));
-        kociaki.add(new Kot("Jozek"));
-        kociaki.add(new Kot("Mruczek"));
-        kociaki.add(new Kot("Wariot"));
+//        ArrayList<Kot> kociaki = new ArrayList<>();
+//        kociaki.add(new Kot("Staszek"));
+//        kociaki.add(new Kot("Jozek"));
+//        kociaki.add(new Kot("Mruczek"));
+//        kociaki.add(new Kot("Wariot"));
+//
+//        for (Kot kociak : kociaki) {
+//            System.out.println(kociak);
+//        }
 
-        for (Kot kociak : kociaki) {
-            System.out.println(kociak);
-        }
+//        System.out.println("=======================");
+//
+//        for (int i = 0; i < kociaki.size(); i++) {
+//            System.out.println(kociaki.get(i));
+//        }
 
-        System.out.println("=======================");
+//        System.out.println("======================");
 
-        for (int i = 0; i < kociaki.size(); i++) {
-            System.out.println(kociaki.get(i));
-        }
-
-        System.out.println("======================");
-
-//        6. Usuwanie elementów z listy
-        kociaki.remove(1);
-
-        for (Kot kociak : kociaki) {
-            System.out.println(kociak);
-        }
-
-        System.out.println("======================");
-        kociaki.remove(new Kot("Mruczek"));
-
-        for (Kot kociak : kociaki) {
-            System.out.println(kociak);
-        }
+// //        6. Usuwanie elementów z listy
+//        kociaki.remove(1);
+//
+//        for (Kot kociak : kociaki) {
+//            System.out.println(kociak);
+//        }
+//
+//        System.out.println("======================");
+//        kociaki.remove(new Kot("Mruczek"));
+//
+//        for (Kot kociak : kociaki) {
+//            System.out.println(kociak);
+//        }
 
 //        7. Lista liczb całkowitych
 //        ArrayList<int> liczbyCalkowite = new ArrayList<int>();
         ArrayList<Integer> liczbyCalkowite = new ArrayList<>();
+        Integer liczba = 10;
 
 //        Integer - typ opakowywujący. Występują dla każdego typu prymitywnego
 //        int - Integer
@@ -73,8 +74,8 @@ public class Main {
 //        void - Void
 //        ...
 
-//        8. Metody ze zmienną liczbą parametrów
-//        Metoda printf
+//  //      8. Metody ze zmienną liczbą parametrów
+//  //      Metoda printf
         System.out.printf("%d\n", 7);
         System.out.printf("%s = %d", "ilośc dni w roku", 365);
 
