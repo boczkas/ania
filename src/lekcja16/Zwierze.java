@@ -1,7 +1,9 @@
 package lekcja16;
 
+import jdk.jshell.spi.ExecutionControl;
+
 public class Zwierze {
-    public void wydajDzwiek() {
-        System.out.println("Nie wiadomo co");
+    protected void wydajDzwiek() throws ExecutionControl.NotImplementedException {
+        throw new ExecutionControl.NotImplementedException("Nie dziala");
     }
 }

@@ -2,7 +2,9 @@ package lekcja16;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.lang.reflect.Field;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -12,6 +14,9 @@ public class Main {
 //              Enum to tak na prawdę klasa. To co sobie tam tworzymy to instancje tej klasy.
 //          - Enum na bogato - dodać do niego możliwość wyciągnięcia pełnej ładnej nazwy.
 //                Dodajemy pole, dodajemy konstruktor.
+
+//        DzienTygodnia dzienTygodnia = DzienTygodnia.PT;
+//        System.out.println(dzienTygodnia.getOpis());
 
 //        2. Refleksja - dwa słowa
 //        Java ma bibliotekę pozwalającą na analizowanie klas
@@ -30,15 +35,43 @@ public class Main {
 //
 //              - checked
 //        File file = new File("lala");
-//        FileInputStream inputStream = new FileInputStream(file);
+//        try {
+//            FileInputStream inputStream = new FileInputStream(file);
+//            System.out.println("Udalo sie");
+//        } catch (FileNotFoundException e) {
+//            System.out.println("Nie ma takiego pliku");
+//        }
 
 //              - unchecked
 //        Kompilator nie wymusza na nas ich obsługi, ale wiedząc, że taki może wystąpić możemy go obsłużyć
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj liczbe:");
-        int liczba = scanner.nextInt();
+//        System.out.println("Podaj liczbe:");
+//        try {
+//            int liczba = scanner.nextInt();
+//        } catch (InputMismatchException e) {
+//            System.out.println("To nie liczba!");
+//        }
 
+//        System.out.println("Podaj liczbe:");
+        String next = scanner.next();
+//
+//        try {
+//            int liczba = Integer.parseInt(next);
+//        } catch (NumberFormatException e) {
+//            System.out.println("To nie liczba!");
+//        }
+
+//        System.out.println("Podaj liczbe");
+//        next = scanner.next();
+//
+//        if (next.matches("[0-9]+")) {
+//            System.out.println("To liczba");
+//        } else {
+//            System.out.println("To nie liczba");
+//        }
+
+//        Pokazać przykłady
 //        Napisać do okoła tego ładnego try/catcha
 //        Zmodyfikujmy pod to Ani kółko/krzyżyk
 
@@ -50,10 +83,10 @@ public class Main {
 //          - przesłaniając metodę nie zmieniaj jej oczekiwanego zachowania
 //          - wykorzystuj polimorfizm zamiast wykorzystywania informacji o typach
 
-        Zwierze kot = new Kot("a", 2);
-        if (kot instanceof Kot) {
-            kot.wydajDzwiek();
-        }
+//        Zwierze kot = new Kot("a", 2);
+//        if (kot instanceof Kot) {
+//            kot.wydajDzwiek();
+//        }
 
 //        Tylko po prostu kot.wydajDzwiek()
 
