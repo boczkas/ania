@@ -91,5 +91,16 @@ public class Main {
 //        Tylko po prostu kot.wydajDzwiek()
 
 //          - nie nadużywaj refleksj
+
+        String tekst = scanner.next();
+        int positionX = -1;
+        if(tekst.equals("quit")) {
+            return;
+        }
+        if (tekst.matches("[0-9]+")) {
+            positionX = Integer.parseInt(tekst);
+        } else {
+            System.out.println("To nie liczba");
+        }
     }
 }
