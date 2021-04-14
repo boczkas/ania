@@ -42,13 +42,13 @@ public class Main {
         Pracownik przemek = new Pracownik("Przemek", 5000);
         Pracownik barylek = new Pracownik("Baryłek", 20000);
 //
-//        Pracownik[] pracownicy = {nikoletta, ania, przemek, barylek};
+        Pracownik[] pracownicy = {nikoletta, ania, przemek, barylek};
 //
 //        for(var pracownik : pracownicy) {
 //            System.out.println(pracownik);
 //        }
 //
-//        Arrays.sort(pracownicy);
+        Arrays.sort(pracownicy);
 //        System.out.println("============================");
 //        for(var pracownik : pracownicy) {
 //            System.out.println(pracownik);
