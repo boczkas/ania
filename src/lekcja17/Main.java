@@ -19,6 +19,18 @@ public class Main {
 //              -   klasa Pies implementująca Krzykacz
 //              -   klasa Trabka implementujaca Krzykacz
 //
+//        List<Krzykacz> krzykaczs = List.of(new Pies(), new Kot(), new Trabka(), new Pracownik("Ania", 100000));
+
+//        for(Krzykacz krzykacz : krzykaczs) {
+//            krzykacz.wydajDzwiek();
+//        }
+//
+//        Krzykacz krzykacz = new Krzykacz() {
+//            @Override
+//            public void wydajDzwiek() {
+//                System.out.println("Krzycz!");
+//            }
+//        };
 //        W interfejsach możemy mieć pola, ale są to tak naprawdę stałe, bo są one public static final
 //        Nie możemy tworzyć instancji interfejsu.
 
@@ -29,18 +41,18 @@ public class Main {
         Pracownik ania = new Pracownik("Ania", 1000000);
         Pracownik przemek = new Pracownik("Przemek", 5000);
         Pracownik barylek = new Pracownik("Baryłek", 20000);
-
-        Pracownik[] pracownicy = {nikoletta, ania, przemek, barylek};
-
-        for(var pracownik : pracownicy) {
-            System.out.println(pracownik);
-        }
-
-        Arrays.sort(pracownicy);
-        System.out.println("============================");
-        for(var pracownik : pracownicy) {
-            System.out.println(pracownik);
-        }
+//
+//        Pracownik[] pracownicy = {nikoletta, ania, przemek, barylek};
+//
+//        for(var pracownik : pracownicy) {
+//            System.out.println(pracownik);
+//        }
+//
+//        Arrays.sort(pracownicy);
+//        System.out.println("============================");
+//        for(var pracownik : pracownicy) {
+//            System.out.println(pracownik);
+//        }
 
 //        Można implementować kilka interfejsów. Niech Pracownik implementuje Krzykacza
 
@@ -49,7 +61,10 @@ public class Main {
 
 //        W interfejsach można można tworzyć metody statyczne.
 //        Dołóżmy zwiększGlosnosc(aktualnaGlosnosc) do naszego Krzykacza
-//
+
+        Krzykacz.zwiekszGlosnosc(10);
+        ania.nakrzycz(barylek);
+
 
 //        Co gdybyśmy chcieli do naszego interfejsu dołożyć metodę?
 //        Pojawia się problem, że musimy ją zaimplementować we wszystkich klasach implementujących

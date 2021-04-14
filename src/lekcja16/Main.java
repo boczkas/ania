@@ -93,12 +93,11 @@ public class Main {
 //          - nie nadużywaj refleksj
 
         String tekst = scanner.next();
-        int positionX = -1;
         if(tekst.equals("quit")) {
             return;
         }
         if (tekst.matches("[0-9]+")) {
-            positionX = Integer.parseInt(tekst);
+            int positionX = Integer.parseInt(tekst);
         } else {
             System.out.println("To nie liczba");
         }

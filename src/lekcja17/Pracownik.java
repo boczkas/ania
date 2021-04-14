@@ -1,6 +1,6 @@
 package lekcja17;
 
-public class Pracownik {
+public class Pracownik implements Comparable<Pracownik>, Krzykacz, Wulgarnik {
     String imie;
     double wyplata;
 
@@ -21,4 +21,20 @@ public class Pracownik {
                 ", wyplata=" + wyplata +
                 '}';
     }
+
+    @Override
+    public int compareTo(Pracownik o) {
+        return Double.compare(this.wyplata, o.wyplata);
+    }
+
+    @Override
+    public void wydajDzwiek() {
+        System.out.println("Daj wincy piniendzy");
+    }
+
+    @Override
+    public void nakrzycz(Krzykacz krzykacz) {
+        System.out.println("Krzycze! !");
+    }
+
 }
