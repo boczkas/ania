@@ -23,6 +23,7 @@ public class Main {
 //        Arrays.sort(pracownicy);
 
 //        To co możemy zrobić to użyć Arrays.sort() z podawanym sposobem sortowania
+
         Comparator<Pracownik> comparatorWyplaty = new Comparator<Pracownik>() {
             @Override
             public int compare(Pracownik o1, Pracownik o2) {
@@ -52,20 +53,15 @@ public class Main {
         }
 
 //        Popatrzmy sobie, że w obu przypadkach coś nam się świeci na szaro. Skopiowany Comparator imienia:
-        Comparator<Pracownik> comparatorImienia2 = new Comparator<Pracownik>() {
-            @Override
-            public int compare(Pracownik o1, Pracownik o2) {
-                return  o1.imie.length() - o2.imie.length();
-            }
-        };
-
+        Comparator<Pracownik> comparatorImienia2 = (o1, o2) -> o1.imie.length() - o2.imie.length();
+//
         System.out.println("========================");
         Arrays.sort(pracownicy, comparatorImienia2);
 
         for (Pracownik pracownik : pracownicy) {
             System.out.println(pracownik);
         }
-
+//
 //        To co nam się tu pojawiło to lambda
 //        Lambdy umożliwiają przekazywanie sobie między obiektami kawałków kodu
 //        Lambdy należy traktować jak funkcje, które możemy sobie przekazywać
@@ -82,7 +78,7 @@ public class Main {
 
         polskiKrzykacz.wydajDzwiek();
         angielskiKrzykacz.wydajDzwiek();
-
+//
 //        Wielokrotny krzykacz
 
         Krzykacz wielokrotnyKrzykacz = () -> {
@@ -105,8 +101,8 @@ public class Main {
 //        Mamy nowy interfejs Manager do krzyczenia na Pracownika
 //        Stwórzmy sobie kilka jego implementacji za pomocą lambd
 
-        Manager milyManager = (Pracownik pracownik) -> System.out.println("Prosiłbym o oddalenie się Panie/Pani " + pracownik.imie);
-        Manager niemilyManager = (Pracownik pracownik) -> System.out.println("Wydupcaj Panie/Pani " + pracownik.imie);
+        Manager milyManager = pracownik -> System.out.println("Prosiłbym o oddalenie się Panie/Pani " + pracownik.imie);
+        Manager niemilyManager = pracownik -> System.out.println("Wydupcaj Panie/Pani " + pracownik.imie);
 
         milyManager.przekazInformacje(przemek);
         niemilyManager.przekazInformacje(barylek);
